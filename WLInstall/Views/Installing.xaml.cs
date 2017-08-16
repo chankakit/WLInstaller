@@ -88,7 +88,9 @@ namespace WLInstall.Views
             progressStep = 7;
             StepLabel.Content = "Ruuning Step: " + progressStep;
 
+            // 此處需要傳入weblink的website app絕對路徑
             string webLinkWebAppFolderPath = @"C:\Program Files (x86)\weblink\WEBAPP";
+
             IISConfiguration.AddPermissions addPermissions = new IISConfiguration.AddPermissions();
             addPermissions.AddIISAccountPermission(webLinkWebAppFolderPath);
 

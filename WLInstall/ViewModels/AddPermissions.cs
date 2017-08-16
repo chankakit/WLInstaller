@@ -15,16 +15,27 @@ namespace IISConfiguration
         {
             try
             {
-                Console.WriteLine("Adding access control entry for\\ " + webLinkWebAppFolderPath);
-                // Add the access control entry to the directory.
+                if(Directory.Exists(webLinkWebAppFolderPath))
+                {
+                    Console.WriteLine("Adding access control entry for\\ " + webLinkWebAppFolderPath);
+                    // Add the access control entry to the directory.
 
-                AddDirectorySecurity(webLinkWebAppFolderPath, IUSRS, FileSystemRights.FullControl);
-                AddDirectorySecurity(webLinkWebAppFolderPath, IIS_IUSRS, FileSystemRights.FullControl);
+                    AddDirectorySecurity(webLinkWebAppFolderPath, IUSRS, FileSystemRights.FullControl);
+                    AddDirectorySecurity(webLinkWebAppFolderPath, IIS_IUSRS, FileSystemRights.FullControl);
 
-                return 0;
+                    return 0;
+                }
+                else
+                {
+                    Console.WriteLine("Path doesn't exist");
+                    return 3;
+                }
+
+                
             }
             catch(Exception e)
             {
+                
                 Console.WriteLine("ERROR in AddPermissions.cs");
                 Console.WriteLine(e);
 

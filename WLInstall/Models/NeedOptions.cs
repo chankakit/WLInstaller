@@ -10,7 +10,7 @@ namespace WLInstall.Models
     public static class NeedOptions
     {
         public const string _10MB_CHUNKS_OF_SQL2012E_SHA1HEX = "fd05a2281aa625a1f110eabcf073add30cc56733";
-        public const string _10MB_CHUNKS_OF_SQL2012E_SHA1HEX_32 = "5a4f855ba113db95d8f1530e5249700c3524efc4";
+        public const string _10MB_CHUNKS_OF_SQL2012E_SHA1HEX_32 = "46bb2785f362e4e8ea2bd07746597a1eba093bd6";
         public const string _10MB_CHUNKS_OF_DOTNET40_SHA1HEX = "7bbbbdd8a1c6e3722cf5553ecd80d0530d835c51";     
 
         public static bool osBit; // True: 64 | False: 32
