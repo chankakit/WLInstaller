@@ -1,0 +1,23 @@
+﻿<Page x:Class="WLInstall.Views.Installing"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:WLInstall.Views"
+      mc:Ignorable="d" 
+      d:DesignHeight="379" d:DesignWidth="690"
+      Title="Installing">
+
+    <Grid>
+        <Label x:Name="StepLabel" Content="Running Step" HorizontalAlignment="Left" Margin="37.241,39.309,0,0" VerticalAlignment="Top" Foreground="White"/>
+        <Button x:Name="DotNETBtn" Content=".NET 4" HorizontalAlignment="Left" Margin="37.241,82.758,0,0" VerticalAlignment="Top" Width="96" Click="InstallDotNET4"/>
+        <Button x:Name="SQLBtn" Content="SQL 64" HorizontalAlignment="Left" Margin="37.241,124.758,0,0" VerticalAlignment="Top" Width="96" Click="InstallSQL64"/>
+        <Button x:Name="EnableTCPBtn" Content="TCP+PORT+RESTART" HorizontalAlignment="Left" Margin="37.241,168.758,0,0" VerticalAlignment="Top" Width="205.759" Click="EnableTCP" Height="22"/>
+        <Button x:Name="SQL32Btn_Copy" Content="SQL 32" HorizontalAlignment="Left" Margin="147,124.758,0,0" VerticalAlignment="Top" Width="96" IsEnabled="False"/>
+        <Button x:Name="SetupIIS" Content="SetupIIS" HorizontalAlignment="Left" Margin="291,82.758,0,0" VerticalAlignment="Top" Width="96" Click="InstallIIS"/>
+        <Button x:Name="SetupWL" Content="SetupWebLink" HorizontalAlignment="Left" Margin="291,124.758,0,0" VerticalAlignment="Top" Width="96" Click="SetupWeblink"/>
+        <Button x:Name="RegASP" Content="RegASP" HorizontalAlignment="Left" Margin="291,168.758,0,0" VerticalAlignment="Top" Width="96" Click="AspNetRegIIS"/>
+        <Button x:Name="ConfigIISWebBtn" Content="ConfigIISWeb" HorizontalAlignment="Left" Margin="432,82.758,0,0" VerticalAlignment="Top" Width="96" Click="ConfigIISWeb"/>
+
+    </Grid>
+</Page>

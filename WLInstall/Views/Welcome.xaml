@@ -1,0 +1,17 @@
+﻿<Page x:Class="WLInstall.Views.Welcome"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:WLInstall.Views"
+      mc:Ignorable="d" 
+      d:DesignHeight="362" d:DesignWidth="469.333"
+      Title="Welcome">
+
+    <Grid>
+        <Label Content="Welcome to"  Margin="34,40,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" VerticalContentAlignment="Center" Foreground="#66FFFFFF" Padding="0,2" />
+        <Label Content="WL Installer" HorizontalAlignment="Left" Margin="34,60,0,0" VerticalAlignment="Top" Foreground="White" FontSize="24" FontFamily="Ubuntu" VerticalContentAlignment="Center" Padding="0,2"/>
+        <TextBlock VerticalAlignment="Top" Margin="34,120,34,0" Foreground="#FFDEDEDE"><Run Text="The Setup Wizard will install"/><LineBreak/><Run Text="- .NET Framework 4.0"/><LineBreak/><Run Text="- Microsoft® SQL Server® 2012 Service Pack 2 (SP2) Express"/><LineBreak/><Run Text="- WebLink"/><LineBreak/><Run Text="- IIS"/></TextBlock>
+        <TextBlock Text="Click Next to continue." VerticalAlignment="Top" Margin="34,220,34,0" Foreground="#FFDEDEDE"/>
+    </Grid>
+</Page>
